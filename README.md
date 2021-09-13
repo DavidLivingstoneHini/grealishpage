@@ -4,7 +4,7 @@
 
 ## How to run
 
-First of all clone repo on your local machine [StackBlitz](http://stackblitz.com/)
+First of all clone repo on your local machine [https://github.com/DavidLivingstoneHini/grealishpage]($ git clone https://github.com/DavidLivingstoneHini/grealishpage)
 
 Or..
 

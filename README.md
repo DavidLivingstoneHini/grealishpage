@@ -12,7 +12,7 @@ Once you're done, open the poject folder in VSCode cd into the root directory of
 
 ## Installing node_modules
 
-once you are in the root directory, run ``npm install`` in the terminal to pull out all node modules
+Once you are in the root directory, run ``npm install`` in the terminal to pull out all node modules
 
 ## Previewing site
 

@@ -10,7 +10,7 @@ Or..
 
 Download a zip of this project repo and unzip in your home directory on your local machine.
 
-Once you're done, open the poject folder in VSCode cd into the root directory of the project: ``cd grealishpage``
+Once you're done, open the poject folder in VSCode and `` cd `` into the root directory of the project: ``cd grealishpage``
 
 ## Installing node_modules
 

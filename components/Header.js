@@ -1,0 +1,87 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import Link from "next/link";
+import { useState } from "react";
+
+import CloseMenuIcon from "./CloseMenuIcon";
+import Logo from "./Logo";
+import MenuIcon from "./MenuIcon";
+
+function NavLink({ href, text }) {
+  return (
+    <li className="ml-6 font-medium">
+      <Link href={href}>
+        <a>{text}</a>
+      </Link>
+    </li>
+  );
+}
+
+export default function Header() {
+  const { showMenu, setShowMenu } = useState(false);
+  return (
+    <>
+      <div className="py-7 flex justify-between items-center">
+        <div className="flex items-center">
+          <Logo className="w-5 h-7" />
+          <span className="text-2xl font-medium ml-1.5 tracking-tight">Grealish</span>
+        </div>
+
+        <div className="md:hidden">
+          {showMenu ? (
+            <CloseMenuIcon
+              className="h-6 w-6 mr-2 cursor-pointer"
+              onClick={() => setShowMenu(!showMenu)}
+            />
+          ) : (
+            <MenuIcon
+              className="h-6 w-6 mr-2 cursor-pointer"
+              onClick={() => setShowMenu(!showMenu)}
+            />
+          )}
+        </div>
+
+        <div className="items-center hidden md:flex">
+          <ul className="flex">
+            <NavLink href="/pricing" text="Pricing" />
+            <NavLink href="/documentation" text="Documentation" />
+            <NavLink href="/blog" text="Blog" />
+          </ul>
+          <div className="">
+            <Link href="/getstarted">
+              <a className="ml-6 bg-pirGreen hover:bg-pirGreenHover transition-colors duration-200 px-3 py-1.5 rounded-lg text-black font-medium">
+                Get Started
+              </a>
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      {showMenu && (
+        <div className="relative">
+          <div className="absolute flex w-full bg-pirBeige">
+            <div className="flex flex-col space-y-4 divide-y-2 divide-pirGray-200 font-medium w-full">
+              <Link href="/pricing">
+                <a className="text-lg px-4 py-4">Pricing</a>
+              </Link>
+              <Link href="/pricing">
+                <a className="text-lg px-4 py-4">Live Demo</a>
+              </Link>
+              <Link href="/pricing">
+                <a className="text-lg px-4 py-4">Documentation</a>
+              </Link>
+              <Link href="/pricing">
+                <a className="text-lg px-4 py-4">Github</a>
+              </Link>
+              <Link href="/pricing">
+                <a className="text-lg px-4 py-4">Twitter</a>
+              </Link>
+              <Link href="/pricing">
+                <a className="text-lg px-4 py-4">Blog</a>
+              </Link>
+            </div>
+          </div>
+        </div>
+      )}
+    </>
+  );
+}

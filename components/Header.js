@@ -17,7 +17,7 @@ function NavLink({ href, text }) {
 }
 
 export default function Header() {
-  const { showMenu, setShowMenu } = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
   return (
     <>
       <div className="py-7 flex justify-between items-center">
@@ -58,26 +58,57 @@ export default function Header() {
 
       {showMenu && (
         <div className="relative">
-          <div className="absolute flex w-full bg-pirBeige">
+          <div className="absolute flex w-full bg-pirBeige pb-10">
             <div className="flex flex-col space-y-4 divide-y-2 divide-pirGray-200 font-medium w-full">
-              <Link href="/pricing">
-                <a className="text-lg px-4 py-4">Pricing</a>
-              </Link>
-              <Link href="/pricing">
-                <a className="text-lg px-4 py-4">Live Demo</a>
-              </Link>
-              <Link href="/pricing">
-                <a className="text-lg px-4 py-4">Documentation</a>
-              </Link>
-              <Link href="/pricing">
-                <a className="text-lg px-4 py-4">Github</a>
-              </Link>
-              <Link href="/pricing">
-                <a className="text-lg px-4 py-4">Twitter</a>
-              </Link>
-              <Link href="/pricing">
-                <a className="text-lg px-4 py-4">Blog</a>
-              </Link>
+              <div className="py-4 border-b-2 border-pirGray-300">
+                <Link href="/pricing">
+                  <a className="text-lg px-4 hover:text-pirGray-700 transition-colors duration-200">
+                    Pricing
+                  </a>
+                </Link>
+              </div>
+              <div className="py-4 border-b-2 border-pirGray-300">
+                <Link href="/pricing">
+                  <a className="text-lg px-4 hover:text-pirGray-700 transition-colors duration-200">
+                    Live Demo
+                  </a>
+                </Link>
+              </div>
+              <div className="py-4 border-b-2 border-pirGray-300">
+                <Link href="/pricing">
+                  <a className="text-lg px-4 hover:text-pirGray-700 transition-colors duration-200">
+                    Documentation
+                  </a>
+                </Link>
+              </div>
+              <div className="py-4 border-b-2 border-pirGray-300">
+                <Link href="/pricing">
+                  <a className="text-lg px-4 hover:text-pirGray-700 transition-colors duration-200">
+                    Github
+                  </a>
+                </Link>
+              </div>
+              <div className="py-4 border-b-2 border-pirGray-300">
+                <Link href="/pricing">
+                  <a className="text-lg px-4 hover:text-pirGray-700 transition-colors duration-200">
+                    Twitter
+                  </a>
+                </Link>
+              </div>
+              <div className="py-4 border-b-2 border-pirGray-300">
+                <Link href="/pricing">
+                  <a className="text-lg px-4 hover:text-pirGray-700 transition-colors duration-200">
+                    Blog
+                  </a>
+                </Link>
+              </div>
+              <div className="flex justify-center">
+                <Link href="/getstarted">
+                  <a className="block bg-pirGreen w-full py-3 rounded-lg text-center hover:bg-pirGreenHover transition-colors duration-200">
+                    Get Started
+                  </a>
+                </Link>
+              </div>
             </div>
           </div>
         </div>

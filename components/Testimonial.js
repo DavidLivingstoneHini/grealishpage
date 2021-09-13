@@ -45,21 +45,21 @@ export default function Testimonial() {
                 <Image
                   className="rounded-full"
                   src="https://randomuser.me/api/portraits/women/31.jpg"
-                  width={380}
-                  height={380}
+                  width={220}
+                  height={220}
                 />
                 <div className="flex flex-col">
-                  <h1 className="text-lg font-bold italic">Carla Smith</h1>
-                  <p>
-                    We use Grealish on our website with privacy in mind. It is a real philosophy.
+                  <h1 className="text-lg font-bold italic">Jada Smith</h1>
+                  <p className="text-pirGray-500">
+                    We use Grealish on our website with privacy in mind.
                   </p>
                 </div>
               </div>
               <div className="absolute top-4 right-4">
                 <svg
-                  width="32"
+                  width="35"
                   height="22"
-                  viewBox="0 0 32 22"
+                  viewBox="0 0 35 22"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -78,15 +78,15 @@ export default function Testimonial() {
               <div className="flex flex-row space-x-4">
                 <div className="flex flex-col">
                   <h1 className="text-lg font-bold italic">Jorja Smith</h1>
-                  <p>
-                    One of the best things about Grealish is how well it displays the data I need.
+                  <p className="text-pirGray-500">
+                    Grealish accurately it displays the data I just need.
                   </p>
                 </div>
                 <Image
                   className="rounded-full"
                   src="https://randomuser.me/api/portraits/women/39.jpg"
-                  width={370}
-                  height={370}
+                  width={200}
+                  height={200}
                 />
               </div>
             </div>
@@ -98,7 +98,7 @@ export default function Testimonial() {
             testimonials
           </h1>
           <p className="mt-8 text-6xl font-bold">We are loyal with our customers</p>
-          <p className="mt-8 text-lg text-gray-700">
+          <p className="mt-8 text-lg md:text-2xl text-pirGray-500">
             Privacy is not optional, it is a right, and Grealish allows you to do it while keeping
             useful statistics for your development.
           </p>

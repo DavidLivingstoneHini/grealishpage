@@ -47,7 +47,7 @@ export default function Header() {
             <NavLink href="/blog" text="Blog" />
           </ul>
           <div className="">
-            <Link href="/getstarted">
+            <Link href="/signin">
               <a className="ml-6 bg-pirGreen hover:bg-pirGreenHover transition-colors duration-200 px-3 py-1.5 rounded-lg text-black font-medium">
                 Get Started
               </a>
@@ -103,7 +103,7 @@ export default function Header() {
                 </Link>
               </div>
               <div className="flex justify-center">
-                <Link href="/getstarted">
+                <Link href="/signin">
                   <a className="block bg-pirGreen w-full py-3 rounded-lg text-center hover:bg-pirGreenHover transition-colors duration-200">
                     Get Started
                   </a>

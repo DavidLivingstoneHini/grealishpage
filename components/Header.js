@@ -59,7 +59,7 @@ export default function Header() {
       {showMenu && (
         <div className="relative">
           <div className="absolute flex w-full bg-pirBeige pb-10">
-            <div className="flex flex-col space-y-4 divide-y-2 divide-pirGray-200 font-medium w-full">
+            <div className="flex flex-col font-medium w-full">
               <div className="py-4 border-b-2 border-pirGray-300">
                 <Link href="/pricing">
                   <a className="text-lg px-4 hover:text-pirGray-700 transition-colors duration-200">

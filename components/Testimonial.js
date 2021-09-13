@@ -45,8 +45,8 @@ export default function Testimonial() {
                 <Image
                   className="rounded-full"
                   src="https://randomuser.me/api/portraits/women/31.jpg"
-                  width={220}
-                  height={220}
+                  width={160}
+                  height={160}
                 />
                 <div className="flex flex-col">
                   <h1 className="text-lg font-bold italic">Jada Smith</h1>
@@ -57,9 +57,9 @@ export default function Testimonial() {
               </div>
               <div className="absolute top-4 right-4">
                 <svg
-                  width="35"
+                  width="32"
                   height="22"
-                  viewBox="0 0 35 22"
+                  viewBox="0 0 32 22"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -85,8 +85,8 @@ export default function Testimonial() {
                 <Image
                   className="rounded-full"
                   src="https://randomuser.me/api/portraits/women/39.jpg"
-                  width={200}
-                  height={200}
+                  width={160}
+                  height={160}
                 />
               </div>
             </div>

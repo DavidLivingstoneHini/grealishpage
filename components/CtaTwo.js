@@ -25,12 +25,20 @@ export default function CtaTwo() {
               <GreenButton href="/livedemo" text="See Live Demo" />
             </div>
           </div>
-          <Image src="https://pirsch.io/static/img/tables-dark.svg" width={568} height={663} />
+          <Image
+            src="https://cdn.dribbble.com/users/2045817/screenshots/15423799/media/5936a4db5634274aa77574d02148e2d0.png"
+            width={568}
+            height={663}
+          />
         </div>
       </div>
       <div className="max-w-520 lg:max-w-none mx-auto">
         <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 mt-14 lg:mt-32">
-          <Image src="https://pirsch.io/static/img/access-dark.svg" width={589} height={600} />
+          <Image
+            src="https://cdn.dribbble.com/users/297195/screenshots/14736399/media/94cd041c172ca84ffcc901c73429655d.png"
+            width={589}
+            height={600}
+          />
           <div className="flex flex-col justify-center lg:pl-14">
             <h4 className="text-2xl lg:text-3xl font-medium">
               Fine-grained Access Management Means Full Control

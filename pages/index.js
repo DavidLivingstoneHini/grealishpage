@@ -20,7 +20,12 @@ export default function Home() {
       <div className="max-w-1200 mx-auto px-4 wrap:px-0">
         <Header />
         <Hero />
-        <Image src="https://pirsch.io/static/img/dashboard-dark.svg" width={1200} height={640} />
+        <Image
+          className="rounded-lg"
+          src="https://cdn.dribbble.com/users/1615584/screenshots/14795728/media/217c90aba448b05c6cab81a6891f071e.jpg"
+          width={1200}
+          height={640}
+        />
         <CtaOne />
         <CtaTwo />
         <Features />

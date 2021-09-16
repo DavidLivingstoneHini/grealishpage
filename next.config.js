@@ -1,5 +1,5 @@
 module.exports = {
   images: {
-    domains: ["pirsch.io", "randomuser.me"],
+    domains: ["pirsch.io", "cdn.dribbble.com", "randomuser.me"],
   },
 };

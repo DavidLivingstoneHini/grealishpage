@@ -45,14 +45,12 @@ export default function Testimonial() {
                 <Image
                   className="rounded-full"
                   src="https://randomuser.me/api/portraits/women/31.jpg"
-                  width={160}
-                  height={160}
+                  width={70}
+                  height={70}
                 />
                 <div className="flex flex-col">
                   <h1 className="text-lg font-bold italic">Jada Smith</h1>
-                  <p className="text-pirGray-500">
-                    We use Grealish on our website with privacy in mind.
-                  </p>
+                  <p className="text-pirGray-500">Gives complete Privacy.</p>
                 </div>
               </div>
               <div className="absolute top-4 right-4">
@@ -78,15 +76,13 @@ export default function Testimonial() {
               <div className="flex flex-row space-x-4">
                 <div className="flex flex-col">
                   <h1 className="text-lg font-bold italic">Jorja Smith</h1>
-                  <p className="text-pirGray-500">
-                    Grealish accurately it displays the data I just need.
-                  </p>
+                  <p className="text-pirGray-500">Accurate display of data.</p>
                 </div>
                 <Image
                   className="rounded-full"
                   src="https://randomuser.me/api/portraits/women/39.jpg"
-                  width={160}
-                  height={160}
+                  width={70}
+                  height={70}
                 />
               </div>
             </div>
